@@ -54,13 +54,12 @@ table {
 */
 
 header {
-  border-bottom: 1px solid #ccc;
   width: 1605px;
   height: 48px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
+  background: #fff;
   position: fixed;
+  border: 1px solid #ccc;
+  top: 0;
 }
 
 header div {
@@ -72,10 +71,6 @@ header div {
 }
 
 body{
-	/*background-image: url("images/index.gif");
-	background-repeat: repeat-y;
-	background-position: 859px 0;*/
-  border: 1px solid #ccc;
 	font-family: sans-serif;
   width: 1605px;
   margin-left: auto;
@@ -202,13 +197,17 @@ body{
 }
 
 .main-container {
+  width: 1605px;
   margin-top: 48px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  height: 100%;
 }
 
 .container {
   margin-top: 70px;
-  margin-left: 300px;
-  margin-right: 300px;
+  width: 66%;
+  margin: 0 auto;
 }
 
 .container div {
@@ -278,7 +277,8 @@ body{
   font-size: 0.6875rem;
 }
 
-.content {
+.content, .content3 {
+
   margin-top: 20px;
   font-family: georgia,"times new roman",times,serif;
   font-size: 1rem;
@@ -289,83 +289,213 @@ body{
   margin: auto;
 }
 
-.content2 {
-  border-top: 1px solid #e2e2e2;
+.article-insert {
   border-bottom: 1px solid #e2e2e2;
-  width: 950px;
-  margin: auto;
+  border-top: 1px solid #e2e2e2;
+  display: block;
+  margin: 15px auto;
+  padding: 15px 0;
+  min-width: 720px;
+  max-width: 945px;
 }
 
-.content2-headline {
-  padding: 7px;
-  font-size: 20px;
-	font-family: georgia;
-	color: #333;
-	font-weight: 700;
-	line-height: 24px;
+.article-insert ul {
+  background: url(images/inflation-945.png) no-repeat;
+  background-size: contain;
+  font-size: 14px;
+  font-family: arial, helvetica, sans-serif;
+  width: 945px;
+  max-width: 100%;
 }
 
-.intro {
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  font-weight: 400;
-  font-style: normal;
-  font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
-  color: #666;
+.article-insert li {
+  display: inline-block;
+  line-height: 17px;
+  margin: 0 0.25%;
+  padding-top: 150px;
+  width: 24%;
+  vertical-align: top;
+}
+
+.article-insert h5 {
+  float: left;
+  font-size: 11px;
+  font-family: "Open Sans", arial, helvetica, sans-serif;
+  font-weight: 700;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.article-insert p {
+  font-size: 13px;
   margin-bottom: 10px;
 }
 
-.content2 img{
-	height: 576px;
-	width: 945px;
-	margin-top: 10px;
+.article-insert h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 3px;
 }
-.content2 p {
-  font-family: arial;
-	font-size: 14px;
-	width: 228px;
-	position: relative;
-}
-.content2 p:nth-child(4) {
-  top: -430px;
-}
-
-.content2 p:nth-child(5) {
-  top: -542px;
-  left: 240px;
+.interative-credit {
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  font-weight: 300;
+  font-style: normal;
+  font-family: "nyt-franklin",arial,helvetica,sans-serif;
+  color: #999;
+  width: 950px;
+  padding-bottom: 10px;
 }
 
-.content2 p:nth-child(6) {
-  top: -653px;
-  left: 480px;
+.content3 iframe {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  left: -30px;
 }
 
-.content2 p:nth-child(7) {
-  top: -750px;
-  left: 720px;
-}
-
-.content2 p:nth-child(8) {
-  top: -580px;
-}
-
-.content2 p:nth-child(9) {
-  top: -691px;
-  left: 240px;
-}
-
-.content2 p:nth-child(10) {
-  top: -802px;
-  left: 480px;
-}
-
-.content2 p:nth-child(11) {
-  top: -914px;
-  left: 720px;
-}
-
-.content2 b {
-  font-size: 12px;
+.content3 h2 {
   font-weight: bold;
-  letter-spacing: .05em;
+}
+
+.Imgdtl {
+    font-size: 0.8125rem;
+    line-height: 1.0625rem;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
+    color: #666;
+}
+
+.support {
+    font-size: 0.6875rem;
+    line-height: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
+    display: inline-block;
+    color: #999;
+}
+
+.telescope {
+  margin-top: 20px;
+  left: -30px;
+}
+
+.support a {
+  text-decoration: none;
+  color: #999;
+}
+
+.support a:hover {
+  text-decoration: underline;
+}
+
+.content3 {
+  margin-bottom: 40px;
+}
+
+.article-previews {
+  margin: 0 auto;
+  width: 1050px;
+}
+
+.article-previews section {
+  width: 675px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.previews-header {
+  border-top: 1px solid #ccc;
+  font-family: "Open Sans", arial, helvetica, sans-serif;
+  margin-top: 25px;
+  padding-top: 8px;
+}
+
+.previews-header h4 {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+.previews-header a {
+  color: #326891;
+  float: right;
+  font-size: 11px;
+  text-align: right;
+  text-decoration: none;
+}
+.article-previews section li {
+  display: inline-block;
+  margin-right: 18px;
+  margin-top: 8px;
+  width: 210px;
+  vertical-align: top;
+}
+
+.article-previews section li:nth-child(3n) {
+  margin-right: 0px;
+}
+.article-previews section li a {
+    font-size: 1rem;
+    line-height: 1.125rem;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
+    text-decoration: none;
+    color: #333;
+}
+
+.article-previews aside {
+  margin-top: 25px;
+  width: 300px;
+  margin-left: 50px;
+  border-top: 1px solid #ccc;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.article-previews aside h5 {
+  font-size: 0.6875rem;
+  line-height: 0.6875rem;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "nyt-franklin",arial,helvetica,sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.article-previews aside ol {
+  margin-left: 30px;
+}
+
+.article-previews aside li {
+  list-style: decimal;
+  list-style-position: outside;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+
+.article-previews aside li > a {
+  color: #326891;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 18px;
+  width: 220px;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.article-previews aside > a {
+  color: #326891;
+  font-family: "Open Sans", arial, helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.article-previews aside img {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
 }
